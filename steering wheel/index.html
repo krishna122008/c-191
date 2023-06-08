@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>VR Car Drive Simulation</title>
+
+  <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+  
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+  <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+  <script src="https://recast-api.donmccurdy.com/aframe-inspector-plugin-recast.js"crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+
+  
+
+</head>
+<body>
+
+
+<a-scene id = "scene" background="cyan">
+    <!--ASSETS-->
+    <a-assets>
+      <a-assets-item id="city" src ="C:/Users/Admin/Desktop/New folder (6)/assets/low_poly_city/scene.gltf">
+
+      </a-assets-item>
+      <a-assets-item id="wheel" src ="C:/Users/Admin/Desktop/New folder (6)/assets/steering wheel/scene.gltf">
+
+      </a-assets-item>
+
+    </a-assets>
+     <!--City Scene Environment-->
+    <a-entity id="citySet" gltf-model="#city" position="10 -2.63754 -150" rotation="0 90 0" scale="1 1 1">
+    </a-entity>
+    <a-entity></a-entity>
+</a-scene>
+</body>
+</html>
